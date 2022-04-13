@@ -333,7 +333,7 @@ while game_running:
     elif game_place == "save":      #Vérification game_place                  
         if save_step == 0:      #Vérification étape
             
-            save_btn_list = fnct.save__create_choice_buttons(SCREEN)     #Création boutons de sauvegarde        
+            save_btn_list = fnct.save__create_button_list(SCREEN)     #Création boutons de sauvegarde        
             save_btn_list_result = fnct.check_button_list(save_btn_list, mouse_click)        #Réception interaction boutons
             if save_btn_list_result:        #Vérification interaction
                 save_step = int(save_btn_list_result)       #Définition étape en fonction de l'interaction

@@ -43,7 +43,7 @@ Tu peux relancer une partie ou quitter le jeu"""
                 title = "Dommage..."
                 word = "perdu"
 
-            text = f"""Tu as {word} {value} jetons\x1fTu peux rejouer ou tenter ta chance sur un autre jeu"""
+            text = f"""Tu as {word} {value} jetons\nTu peux rejouer ou tenter ta chance sur un autre jeu"""
 
 
         title_color = (140, 106, 0)

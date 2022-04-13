@@ -8,7 +8,7 @@
 import pygame
 
 #Modules de l'application
-from constants import DIR
+# from constants import DIR
 
 class Button(pygame.sprite.Sprite):
     def __init__(self, screen, unprsd_img='btn_unprsd.png', prssd_img='btn_prssd.png', x=0, y=0, text_txt="TITLE", caption_txt="caption", text_color=(140, 106, 0), caption_color=(191, 144, 0)):
@@ -19,7 +19,7 @@ class Button(pygame.sprite.Sprite):
         self.surface = screen
         self.surface_width, self.surface_height = self.surface.get_size()
         
-        self.image = pygame.image.load(DIR + "\\img\\btn_unprsd.png").convert_alpha()
+        self.image = pygame.image.load(".\\img\\btn_unprsd.png").convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.x, self.rect.y = self.__adjustPos(x, y)
         
@@ -68,7 +68,7 @@ class Button(pygame.sprite.Sprite):
     def __editImg(self, img):
     #|-_    Modifie l'image de fond du bouton si la souris le survole
         
-        self.image = pygame.image.load(DIR + '\\img\\btn_prssd.png').convert_alpha() if self.checkHover() else self.image
+        self.image = pygame.image.load('.\\img\\btn_prssd.png').convert_alpha() if self.checkHover() else self.image
     
     def blit(self):
     #|-_    Affiche l'objet à l'écran soit l'image de fond du bouton, son texte et sa légende

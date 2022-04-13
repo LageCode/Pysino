@@ -15,22 +15,20 @@ HEIGHT = 720                                        #Hauteur de l'écran
 RESOLUTION = (WIDTH, HEIGHT)                        #Résolution de l'écran
 SCREEN = pygame.display.set_mode(RESOLUTION)        #Ecran
 
-DIR = os.path.dirname(os.path.abspath(__file__))
-
-ICON = pygame.image.load(DIR + "\\img\\icon.png").convert_alpha()
+ICON = pygame.image.load(".\\img\\icon.png").convert_alpha()
 TITLE = "Casino Python by Calvleo 6tb"                                      #Titre de la fenêtre
-BACKGROUND = pygame.image.load(os.path.join(DIR + "\\img\\background.jpg")).convert_alpha()      #Image de fond
+BACKGROUND = pygame.image.load(os.path.join(".\\img\\background.jpg")).convert_alpha()      #Image de fond
 
 CLOCK = pygame.time.Clock()     #Rafraîchissement de l'écran 
 FPS = 60                        #Nombre d'images par seconde
 
 BALANCE_MAX = 100000000000
 
-BUTTON_IMG = pygame.image.load(DIR + '\\img\\btn_unprsd.png').convert_alpha()                      #Image par défaut des boutons
+BUTTON_IMG = pygame.image.load('.\\img\\btn_unprsd.png').convert_alpha()                      #Image par défaut des boutons
 BUTTON_WIDTH = BUTTON_IMG.get_width()
-ROLL_BUTTON_IMG = pygame.image.load(DIR + '.\\img\\roll_black_btn_unprsd.png').convert_alpha()      #Image par défaut du bouton noir de la roulette
-BALANCE_IMG = pygame.image.load(DIR + '\\img\\balance.png').convert_alpha()                        #Image par défaut du solde
-INPUT_IMG = pygame.image.load(DIR + '\\img\\input.png').convert_alpha()                            #Image par défaut de la zone de texte
+ROLL_BUTTON_IMG = pygame.image.load('.\\img\\roll_black_btn_unprsd.png').convert_alpha()      #Image par défaut du bouton noir de la roulette
+BALANCE_IMG = pygame.image.load('.\\img\\balance.png').convert_alpha()                        #Image par défaut du solde
+INPUT_IMG = pygame.image.load('.\\img\\input.png').convert_alpha()                            #Image par défaut de la zone de texte
 
 #Texte d'aide pour la roulette
 ROLL_TIP_TXT = """

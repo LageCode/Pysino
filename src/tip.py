@@ -8,7 +8,10 @@
 import pygame
 
 #Modules de l'application
-# ...
+# import constants as const
+
+
+# DIR = const.DIR
 
 class Tip(pygame.sprite.Sprite):
     def __init__(self, screen, text, color=(255, 230, 153), height=10, img='tip.png'):
@@ -22,11 +25,11 @@ class Tip(pygame.sprite.Sprite):
             img (str, optional): Image du bouton. Defaults to 'tip.png'.
         """
         pygame.sprite.Sprite.__init__(self)
-        
+   
         self.surface = screen
         self.surface_width = self.surface.get_width()
         
-        self.image = pygame.image.load(f'./img/{img}').convert_alpha()
+        self.image = pygame.image.load(f'.\\img\\{img}').convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.x, self.rect.y = (1220, 10)
         
@@ -64,5 +67,6 @@ class Tip(pygame.sprite.Sprite):
         Returns:
             bool: Booléen correspondant à la condition notée ci dessus
         """
+        
         return self.rect.collidepoint(pygame.mouse.get_pos())
           
